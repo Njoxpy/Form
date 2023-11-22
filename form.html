@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    form {
+      width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+    <br>
+
+    <label for="middleName">Middle Name</label>
+    <input type="text" name="middleName" id="middleName" placeholder="Enter your middle name" required>
+    <br>
+
+    <label for="surName">Surname</label>
+    <input type="text" name="surName" id="surName" placeholder="Enter your surname" required>
+    <br>
+
+    <label for="regNo">Registration Number</label>
+    <input type="number" name="regNo" id="regNo" placeholder="Enter your registration number" required>
+    <br>
+
+    <label for="gender">Gender</label>
+    <label for="male">
+      <input type="radio" name="gender" value="male" id="male"> Male
+    </label>
+    <label for="female">
+      <input type="radio" name="gender" value="female" id="female"> Female
+    </label>
+    <br>
+
+    <label for="country">Country</label>
+    <select name="country" id="country">
+      <option value="Burundi">Burundi</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Rwanda">Rwanda</option>
+      <option value="Somalia">Somalia</option>
+      <option value="South Sudan">South Sudan</option>
+      <option value="Tanzania">Tanzania</option>
+      <option value="Uganda">Uganda</option>
+    </select>
+    <br>
+
+    <label for="programme">Programme</label>
+    <input type="text" name="programme" id="programme" placeholder="Enter your program" required>
+    <br>
+
+    <label for="dateOfAdmission">Date Of Admission</label>
+    <input type="date" name="dateOfAdmission" id="dateOfAdmission">
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email">
+    <br>
+
+    <label for="phoneNumber">Phone Number</label>
+    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number">
+    <br>
+
+    <label for="Description">Description</label>
+    <textarea name="Description" id="Description" cols="30" rows="10"
+      placeholder="Enter Description"></textarea>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password">
+
+    <br>
+    <button type="submit">Register</button>
+
+  </form>
+</body>
+
+</html>
