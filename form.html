@@ -11,11 +11,12 @@
       margin: 0 auto;
       border: 1px solid #ccc;
       padding: 20px;
+      border-radius: 4px;
     }
 
     label {
       display: block;
-      margin-bottom: 5px;
+      margin: 5px;
     }
 
     input,
@@ -37,6 +38,12 @@
       background-color: #007bff;
       color: #fff;
       cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+    h3{
+      text-align: center;
     }
   </style>
 </head>
@@ -44,6 +51,7 @@
 <body>
 
   <form action="" method="post">
+    <h3>Register</h3>
     <label for="firstName">First Name</label>
     <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
     <br>
